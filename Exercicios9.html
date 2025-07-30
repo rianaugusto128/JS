@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let dia = prompt("Digite o nome de um dia da semana (ex: segunda):");
+        dia = dia.toLowerCase(); // garante que está em minúsculas
+
+        if (dia === "segunda" || dia === "terça" || dia === "quarta" || dia === "quinta" || dia === "sexta") {
+            document.write("Dia útil.");
+        } else if (dia === "sábado" || dia === "domingo") {
+            document.write("Fim de semana.");
+        } else {
+            document.write("Dia inválido.");
+        }
+    </script>
+</body>
+</html>
